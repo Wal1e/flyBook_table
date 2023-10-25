@@ -1,0 +1,184 @@
+html.theme-default {
+  /* 基础颜色 */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-transparent: transparent;
+
+  --color-neutral-1: #f9fafb;
+  --color-neutral-2: #f2f3f5;
+  --color-neutral-3: #e6e8ed;
+  --color-neutral-4: #ced2d9;
+  --color-neutral-5: #a5acb8;
+  --color-neutral-6: #868f9e;
+  --color-neutral-7: #636d7d;
+  --color-neutral-8: #404a59;
+  --color-neutral-9: #212c3b;
+  --color-neutral-10: #111928;
+
+  --color-blue-1: #e8f0fe;
+  --color-blue-2: #d2e0fc;
+  --color-blue-3: #bbd1fb;
+  --color-blue-4: #8eb2f9;
+  --color-blue-5: #4983f5;
+  --color-blue-6: #1c64f2;
+  --color-blue-7: #1650c2;
+  --color-blue-8: #113c91;
+  --color-blue-9: #0b2861;
+  --color-blue-10: #081e49;
+
+  --color-red-1: #fbeaea;
+  --color-red-2: #f7d5d5;
+  --color-red-3: #f3bfbf;
+  --color-red-4: #eb9595;
+  --color-red-5: #de5555;
+  --color-red-6: #d62b2b;
+  --color-red-7: #ab2222;
+  --color-red-8: #801a1a;
+  --color-red-9: #561111;
+  --color-red-10: #400d0d;
+
+  --color-yellow-1: #f9f3e6;
+  --color-yellow-2: #f3e7cc;
+  --color-yellow-3: #eddbb3;
+  --color-yellow-4: #e1c480;
+  --color-yellow-5: #cea033;
+  --color-yellow-6: #c28800;
+  --color-yellow-7: #9b6d00;
+  --color-yellow-8: #745200;
+  --color-yellow-9: #4e3600;
+  --color-yellow-10: #3a2900;
+
+  --color-orange-1: #fbefe8;
+  --color-orange-2: #f7e0d1;
+  --color-orange-3: #f3d0ba;
+  --color-orange-4: #ebb18d;
+  --color-orange-5: #de8148;
+  --color-orange-6: #d6621a;
+  --color-orange-7: #ab4e15;
+  --color-orange-8: #803b10;
+  --color-orange-9: #56270a;
+  --color-orange-10: #401d08;
+
+  --color-green-8: #045538;
+  --color-green-1: #e6f4ef;
+  --color-green-2: #cde8df;
+  --color-green-3: #b5ddce;
+  --color-green-4: #83c7ae;
+  --color-green-5: #39a57d;
+  --color-green-6: #078e5d;
+  --color-green-7: #06724a;
+  --color-green-9: #033925;
+  --color-green-10: #022b1c;
+
+  --color-lime-1: #f3f5e6;
+  --color-lime-2: #e7eace;
+  --color-lime-3: #dbe0b5;
+  --color-lime-4: #c4cb84;
+  --color-lime-5: #a0ab3a;
+  --color-lime-6: #889609;
+  --color-lime-7: #6d7807;
+  --color-lime-8: #525a05;
+  --color-lime-9: #363c04;
+  --color-lime-10: #292d03;
+
+  --color-teal-1: #e6f2f4;
+  --color-teal-2: #cde6ea;
+  --color-teal-3: #b4d9df;
+  --color-teal-4: #82c0ca;
+  --color-teal-5: #369aa9;
+  --color-teal-6: #048194;
+  --color-teal-7: #036776;
+  --color-teal-8: #024d59;
+  --color-teal-9: #02343b;
+  --color-teal-10: #01272c;
+
+  --color-indigo-10: #1a1742;
+  --color-indigo-9: #231e58;
+  --color-indigo-8: #342d83;
+  --color-indigo-7: #463caf;
+  --color-indigo-6: #574bdb;
+  --color-indigo-5: #796fe2;
+  --color-indigo-4: #aba5ed;
+  --color-indigo-3: #cdc9f4;
+  --color-indigo-2: #dddbf8;
+  --color-indigo-1: #eeedfb;
+
+  --color-purple-1: #f2ebfc;
+  --color-purple-2: #e5d7fa;
+  --color-purple-3: #d8c2f7;
+  --color-purple-4: #bf9af2;
+  --color-purple-5: #985dea;
+  --color-purple-6: #7e35e5;
+  --color-purple-7: #652ab7;
+  --color-purple-8: #4c2089;
+  --color-purple-9: #32155c;
+  --color-purple-10: #261045;
+
+  --color-pink-1: #fbe9f2;
+  --color-pink-2: #f6d2e4;
+  --color-pink-3: #f2bcd7;
+  --color-pink-4: #ea8fbc;
+  --color-pink-5: #dd4b94;
+  --color-pink-6: #d41e79;
+  --color-pink-7: #aa1861;
+  --color-pink-8: #7f1249;
+  --color-pink-9: #550c30;
+  --color-pink-10: #400924;
+
+  --shadow-1: 0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 1px 4px 0px rgba(17, 25, 40, 0.1);
+  --shadow-2: 0px 0px 1px 0px rgba(17, 25, 40, 0.12), 0px 2px 8px 0px rgba(17, 25, 40, 0.1);
+  --shadow-3: 0px 0px 1px 0px rgba(17, 25, 40, 0.1), 0px 4px 16px 0px rgba(17, 25, 40, 0.14);
+  --shadow-4: 0px 0px 1px 0px rgba(17, 25, 40, 0.14), 0px 10px 24px -2px rgba(17, 25, 40, 0.16);
+  --shadow-5: 0px 0px 1px 0px rgba(17, 25, 40, 0.16), 0px 20px 48px -4px rgba(17, 25, 40, 0.2);
+  --shadow-color-primary: 0px 0px 0px 4px var(--color-blue-4), 0px 0px 0px 1px #fff;
+
+  --radius-none: 0;
+  --radius-xxs: 2px;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-xxl: 24px;
+  --radius-full: 50%;
+
+  --spacing-none: 0;
+  --spacing-xxxs: 2px;
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+  --spacing-xxxl: 128px;
+
+  --font-family: '-apple-system,PingFang SC,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Tahoma,Microsoft Yahei,Arial,Hiragino Sans GB,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji';
+
+  // 字体
+  // 辅助信息 fontSize 12px, lineHeight 20px
+  // 正文     fontSize 14px, lineHeight 22px
+  // 小标题   fontSize 16px, lineHeight 24px
+  // 中标题   fontSize 20px, lineHeight 28px
+  // 大标题   fontSize 24px, lineHeight 32px
+  // 展示标题-小   fontSize 28px, lineHeight 36px
+  // 展示标题-中   fontSize 32px, lineHeight 40px
+  // 展示标题-大   fontSize 48px, lineHeight 56px
+  // 展示标题-超大  fontSize 56px, lineHeight 64px
+
+  --color-mask: rgba(64, 74, 89, 0.6);
+  --color-mask-hover: rgba(0, 0, 0, 0.16);
+  --color-mask-active: rgba(0, 0, 0, 0.32);
+
+  // 特殊定制的颜色
+  // menu菜单定制颜色
+  --bg-color-nav: #f0f2f5;
+  --bg-color-menu: #f0f2f5;
+  --bg-color-menu-hover: #dfe2e8;
+  --bg-color-menu-active: #d5d9e0;
+  --bg-color-menu-selected: #f9fafc;
+
+  // 单元格
+  --color-cell-hover: #F2F3F5;
+  --color-cell-active: #E6E8ED;
+}

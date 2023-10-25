@@ -1,0 +1,51 @@
+@mixin bgColorHoverActiveMixin($color) {
+  background-color: var(--bg-color-#{$color}) !important;
+  &:hover {
+    background-color: var(--bg-color-#{$color}-hover) !important;
+  }
+  &:active {
+    background-color: var(--bg-color-#{$color}-active) !important;
+  }
+}
+
+@mixin colorHoverActiveMixin(
+  $color: null,
+  $bgColor: null,
+  $borderColor: $bgColor,
+  $hoverColor: $color,
+  $activeColor: $color
+) {
+  @if $color != null {
+    color: $color;
+  }
+  &:hover {
+    @if $hoverColor != null {
+      color: $hoverColor;
+    }
+    @if $bgColor != null {
+      background-color: var(--bg-color-#{$bgColor}-hover);
+    }
+    @if $borderColor != null {
+      @if $borderColor == $bgColor {
+        border-color: var(--bg-color-#{$bgColor}-hover);
+      } @else {
+        border-color: $borderColor;
+      }
+    }
+  }
+  &:active {
+    @if $activeColor != null {
+      color: $activeColor;
+    }
+    @if $bgColor != null {
+      background-color: var(--bg-color-#{$bgColor}-active);
+    }
+    @if $borderColor != null {
+      @if $borderColor == $bgColor {
+        border-color: var(--bg-color-#{$bgColor}-active);
+      } @else {
+        border-color: $borderColor;
+      }
+    }
+  }
+}

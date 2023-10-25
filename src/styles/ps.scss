@@ -1,0 +1,118 @@
+/*
+ * Container style
+ */
+ .ps {
+    --ps-rail-bold: 10px; // 滚动条粗细
+    --ps-thumb-bold: 6px; // 滚动滑块粗细
+    --ps-thumb-color-default: rgba(133, 138, 153, 0.4); // 默认滚动滑块颜色
+    --ps-thumb-color-hover: rgba(32, 35, 43, 0.4); // hover时 滚动滑块颜色
+    --ps-rail-background-default: transparent; // 默认滚动条背景色
+    --ps-rail-background-hover: transparent; // hover时 滚动条背景色
+    overflow: hidden !important;
+    overflow-anchor: none;
+    -ms-overflow-style: none;
+    touch-action: auto;
+    -ms-touch-action: auto;
+  }
+  // 预留滚动条宽度，避免容器宽度变化
+  .ps--active-y {
+    padding: 0 var(--ps-rail-bold);
+  }
+  .ps--active-x {
+    padding: var(--ps-rail-bold) 0;
+  }
+  /*
+   * Scrollbar rail styles
+   */
+  .ps__rail-x {
+    display: none;
+    opacity: 0;
+    transition: background-color .2s linear, opacity .2s linear;
+    -webkit-transition: background-color .2s linear, opacity .2s linear;
+    height: var(--ps-rail-bold);
+    /* there must be 'bottom' or 'top' for ps__rail-x */
+    bottom: 0px;
+    /* please don't change 'position' */
+    position: absolute;
+  }
+  .ps__rail-y {
+    display: none;
+    opacity: 0;
+    transition: background-color .2s linear, opacity .2s linear;
+    -webkit-transition: background-color .2s linear, opacity .2s linear;
+    width: var(--ps-rail-bold);
+    /* there must be 'right' or 'left' for ps__rail-y */
+    right: 0;
+    /* please don't change 'position' */
+    position: absolute;
+  }
+  .ps--active-x > .ps__rail-x,
+  .ps--active-y > .ps__rail-y {
+    display: block;
+    background-color: var(--ps-rail-background-default);
+  }
+  .ps:hover > .ps__rail-x,
+  .ps:hover > .ps__rail-y,
+  .ps--focus > .ps__rail-x,
+  .ps--focus > .ps__rail-y,
+  .ps--scrolling-x > .ps__rail-x,
+  .ps--scrolling-y > .ps__rail-y {
+    opacity: 1;
+  }
+  .ps .ps__rail-x:hover,
+  .ps .ps__rail-y:hover,
+  .ps .ps__rail-x:focus,
+  .ps .ps__rail-y:focus,
+  .ps .ps__rail-x.ps--clicking,
+  .ps .ps__rail-y.ps--clicking {
+    background-color: var(--ps-rail-background-hover);
+    opacity: 1;
+  }
+  /*
+   * Scrollbar thumb styles
+   */
+  .ps__thumb-x {
+    background-color: var(--ps-thumb-color-default);
+    border-radius: var(--ps-thumb-bold);
+    transition: background-color .2s linear, height .2s ease-in-out;
+    -webkit-transition: background-color .2s linear, height .2s ease-in-out;
+    height: var(--ps-thumb-bold);
+    /* there must be 'bottom' for ps__thumb-x */
+    bottom: 2px;
+    /* please don't change 'position' */
+    position: absolute;
+  }
+  .ps__thumb-y {
+    background-color: var(--ps-thumb-color-default);
+    border-radius: var(--ps-thumb-bold);
+    transition: background-color .2s linear, width .2s ease-in-out;
+    -webkit-transition: background-color .2s linear, width .2s ease-in-out;
+    width: var(--ps-thumb-bold);
+    /* there must be 'right' for ps__thumb-y */
+    right: 2px;
+    /* please don't change 'position' */
+    position: absolute;
+  }
+  .ps__rail-x:hover > .ps__thumb-x,
+  .ps__rail-x:focus > .ps__thumb-x,
+  .ps__rail-x.ps--clicking .ps__thumb-x {
+    background-color: var(--ps-thumb-color-hover);
+    height: var(--ps-thumb-bold);
+  }
+  .ps__rail-y:hover > .ps__thumb-y,
+  .ps__rail-y:focus > .ps__thumb-y,
+  .ps__rail-y.ps--clicking .ps__thumb-y {
+    background-color: var(--ps-thumb-color-hover);
+    width: var(--ps-thumb-bold);
+  }
+  /* MS supports */
+  @supports (-ms-overflow-style: none) {
+  .ps {
+    overflow: auto !important;
+   }
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps {
+    overflow: auto !important;
+  }
+}

@@ -1,0 +1,177 @@
+@import './theme/theme-default.scss';
+:root {
+  /* 主题色 */
+  --color-primary: var(--color-blue-6);
+  --color-primary-hover: var(--color-blue-5);
+  --color-primary-active: var(--color-blue-7);
+
+  /* 成功颜色 */
+  --color-success: var(--color-green-6);
+  --color-success-hover: var(--color-green-5);
+  --color-success-active: var(--color-blue-7);
+  /* 警告颜色 */
+  --color-warning: var(--color-yellow-6);
+  --color-warning-hover: var(--color-yellow-5);
+  --color-warning-active: var(--color-yellow-7);
+  /* 错误颜色 */
+  --color-error: var(--color-red-6);
+  --color-error-hover: var(--color-red-5);
+  --color-error-active: var(--color-red-7);
+  // 信息提示的文本色
+  --color-info: var(--color-blue-6);
+  --color-info-hover: var(--color-blue-5);
+  --color-info-active: var(--color-blue-7);
+
+  /* 文本 */
+  // 主要文字颜色(最常用文本用色)
+  --color-text-base: var(--color-neutral-10);
+  // 二级浅文本颜色
+  --color-text-secondary: var(--color-neutral-8);
+  // 三级文本颜色
+  --color-text-tertiary: var(--color-neutral-6);
+  // 输入框placeholder颜色
+  --color-text-placeholder: var(--color-neutral-6);
+  // 禁用文本颜色
+  --color-text-disabled: var(--color-neutral-4);
+  /* 深色背景下的字体颜色 */
+  --color-text-ondark: var(--color-white);
+
+  /* link链接 */
+  --color-link: var(--color-blue-6);
+  --color-link-hover: var(--color-blue-5);
+  --color-link-active: var(--color-blue-7);
+
+  /* 选中的颜色，其实就是主题色 */
+  --color-selected: var(--color-blue-6);
+  --color-selected-hover: var(--color-blue-5);
+  --color-selected-active: var(--color-blue-7);
+
+  /* 边框 */
+  --border-color-base: var(--color-neutral-3);
+  --border-color-light: var(--color-neutral-2);
+  --border-color-dark: var(--color-neutral-4);
+  --border-color-darker: var(--color-neutral-6);
+  --border-color-disabled: var(--color-neutral-3);
+  --border-color-ondark: var(--color-white);
+  --border-color-input: var(--color-neutral-3);
+  --border-color-hover: var(--color-primary-hover);
+
+  /* 背景色 */
+  // mask蒙层
+  --bg-color-mask: var(--color-mask);
+  --bg-color-mask-hover: var(--color-mask-hover);
+  --bg-color-mask-active: var(--color-mask-active);
+
+  // nav导航背景色，特殊定制
+  --bg-color-nav: var(--bg-color-nav);
+
+  // menu菜单定制颜色
+  --bg-color-menu: var(--bg-color-menu);
+  --bg-color-menu-hover: var(--bg-color-menu-hover);
+  --bg-color-menu-active: var(--bg-color-menu-active);
+  --bg-color-menu-selected: var(--bg-color-menu-selected);
+
+  // 禁用背景色
+  --bg-color-disabled: var(--color-neutral-2);
+  // 次级按钮， TAB
+  --bg-color-base: var(--color-neutral-2);
+  --bg-color-base-hover: var(--color-neutral-3);
+  --bg-color-base-active: var(--color-neutral-4);
+
+  // 二级menu菜单
+  --bg-color-light: var(--color-neutral-1);
+  --bg-color-light-hover: var(--bg-color-base-hover);
+  --bg-color-light-active: var(--bg-color-base-active);
+
+  // 描边按钮背景
+  --bg-color-lighter: var(--color-white);
+  --bg-color-lighter-hover: var(--color-neutral-2);
+  --bg-color-lighter-active: var(--color-neutral-3);
+
+  // 深色组件如tooltips
+  --bg-color-dark: var(--color-neutral-8);
+  --bg-color-dark-hover: var(--color-neutral-7);
+  --bg-color-dark-active: var(--color-neutral-9);
+
+  // 页面全局背景
+  --bg-color-surface: var(--color-white);
+  --bg-color-surface-hover: var(--color-neutral-2);
+  --bg-color-surface-active: var(--color-neutral-3);
+
+  // 下拉菜单，模态框等背景
+  --bg-color-surface-overlay: var(--color-white);
+  --bg-color-surface-overlay-hover: var(--color-neutral-2);
+  --bg-color-surface-overlay-active: var(--color-neutral-3);
+
+  // 主题色的背景
+  --bg-color-primary: var(--color-primary);
+  --bg-color-primary-hover: var(--color-primary-hover);
+  --bg-color-primary-active: var(--color-primary-active);
+  --bg-color-primary-light: var(--color-blue-1);
+  --bg-color-primary-light-hover: var(--color-blue-2);
+  --bg-color-primary-light-active: var(--color-blue-3);
+
+  --bg-color-success: var(--color-success);
+  --bg-color-success-hover: var(--color-success-hover);
+  --bg-color-success-active: var(--color-success-active);
+  --bg-color-success-light: var(--color-green-1);
+  --bg-color-success-light-hover: var(--color-green-2);
+  --bg-color-success-light-active: var(--color-green-3);
+
+  --bg-color-warning: var(--color-warning);
+  --bg-color-warning-hover: var(--color-warning-hover);
+  --bg-color-warning-active: var(--color-warning-active);
+  --bg-color-warning-light: var(--color-yellow-1);
+  --bg-color-warning-light-hover: var(--color-yellow-2);
+  --bg-color-warning-light-active: var(--color-yellow-3);
+
+  --bg-color-error: var(--color-error);
+  --bg-color-error-hover: var(--color-error-hover);
+  --bg-color-error-active: var(--color-error-active);
+  --bg-color-error-light: var(--color-red-1);
+  --bg-color-error-light-hover: var(--color-red-2);
+  --bg-color-error-light-active: var(--color-red-3);
+
+  --bg-color-info: var(--color-info);
+  --bg-color-info-hover: var(--color-info-hover);
+  --bg-color-info-active: var(--color-info-active);
+  --bg-color-info-light: var(--color-blue-1);
+  --bg-color-info-light-hover: var(--color-blue-2);
+  --bg-color-info-light-active: var(--color-blue-3);
+
+  // 针对table组件的特殊背景色
+  --bg-color-table-row-base: var(--color-white);
+  --bg-color-table-row-base-hover: var(--color-neutral-1);
+  --bg-color-table-cell-base: var(--color-white);
+  --bg-color-table-cell-base-hover: var(--color-neutral-3);
+  --bg-color-table-cell-hover: var(--color-cell-hover);
+  --bg-color-table-cell-active: var(--color-cell-active);
+  --bg-color-table-header: var(--color-neutral-1);
+  --bg-color-table-header-hover: var(--color-neutral-2);
+  --bg-color-table-header-active: var(--color-neutral-3);
+
+  /* 圆角 */
+  --border-radius-base: var(--radius-md);
+  --border-radius-xxs: var(--radius-xxs);
+  --border-radius-xs: var(--radius-xs);
+  --border-radius-sm: var(--radius-sm);
+  --border-radius-lg: var(--radius-lg);
+  --border-radius-xl: var(--radius-xl);
+  --border-radius-xxl: var(--radius-xxl);
+  --border-radius-full: var(--radius-full);
+
+  /* 阴影 */
+  --box-shadow-base: var(--shadow-3);
+  --box-shadow-light: var(--shadow-2);
+  --box-shadow-lighter: var(--shadow-1);
+  --box-shadow-dark: var(--shadow-4);
+  --box-shadow-darker: var(--shadow-5);
+  --box-shadow-color-primary: var(--shadow-color-primary);
+
+  /* 图标 */
+  --color-icon-base: var(--color-neutral-8);
+  --color-icon-light: var(--color-neutral-6);
+  --color-icon-disabled: var(--color-neutral-4);
+  // 在深色背景下的图标颜色
+  --color-icon-ondark: var(--color-white);
+}
